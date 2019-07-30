@@ -9,7 +9,7 @@ from lxml import etree as ET
 CSV_PATH = './HCPMetadata.csv'
 BASE_FILE_PATH = '/cluster/brain/connectome_disks'
 BISQUE_ROOT_URL = 'https://bisque.ece.ucsb.edu'
-bq_session = BQSession().init_local('username', 'password', bisque_root=BISQUE_ROOT_URL, create_mex=True)
+bq_session = BQSession().init_local('#username#', '#password#', bisque_root=BISQUE_ROOT_URL, create_mex=True)
 
 
 failed_files = []
