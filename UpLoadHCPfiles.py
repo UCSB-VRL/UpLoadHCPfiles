@@ -1,6 +1,5 @@
 import pandas as pd
 import re
-import pprint
 import uuid
 from bqapi import *
 from bqapi.util import save_blob
@@ -178,7 +177,7 @@ def process_full_set(session, start_path):
     return uri_list
 
    
-#check if it is freesurfer files
+#check if it is T1w images
 def notFsFile(path):
     tags = createTags(path)
     valid = False
@@ -245,22 +244,7 @@ def isValidFile(path):
     size = statinfo.st_size
     return (size != 0)
 
-def createTagsTest():
-    li1 = createTags('/100206/MNINonLinear/Results/rfMRI_REST2_LR/rfMRI_REST2_LR.L.native.func.gii')
-    li2 = createTags('/100206/T1w/Diffusion/data.nii.gz')
-    li3 = createTags('/100206/T1w/Results/tfMRI_GAMBLING_RL/PhaseOne_gdc_dc.nii.gz')
 
-    pprint.pprint(li1)
-    pprint.pprint(li2)
-    pprint.pprint(li3)
-
-def createCSVTagsTest():
-    li1 = createCSVTags('/100206/MNINonLinear/Results/rfMRI_REST2_LR/rfMRI_REST2_LR.L.native.func.gii')
-    li2 = createCSVTags('/100206/T1w/Diffusion/data.nii.gz')
-    li3 = createCSVTags('/100206/T1w/Results/tfMRI_GAMBLING_RL/PhaseOne_gdc_dc.nii.gz')
-    pprint.pprint(li1)
-    pprint.pprint(li2)
-    pprint.pprint(li3)
 
 #createTagsTest()  
 #createCSVTagsTest()
