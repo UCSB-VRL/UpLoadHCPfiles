@@ -24,7 +24,7 @@ bq_session = BQSession().init_local('#username#', '#password#', bisque_root=BISQ
 python UpLoadHCPfiles.py
 ```
 ## Explaination
-line#8: his is the declaration of the path of .csv file
+line#8: this is the declaration of the path of .csv file
 ```
 CSV_PATH = './HCPMetadata.csv'
 ```
