@@ -36,3 +36,5 @@ line#10: here is the Bisque root url which will add to the url of metadata and s
 ```
 BISQUE_ROOT_URL = 'https://bisque.ece.ucsb.edu'
 ```
+## Authors
+Akshay Heda, Suhail Chakravarty, Calvin Jenkins, Ziming Qi
