@@ -2,7 +2,7 @@
 Add annotation of T1w images in HCP dataset by parsing its absolute path to build metadata, and then upload the images with their metadata into Bisque.
 ***
 ## Using Steps
-1. Log in to your Brain service account  
+1. Log in to your Brain server account  
 ```
 ssh username@brain.ece.ucsb.edu
 ```  
@@ -28,7 +28,7 @@ line#8: his is the declaration of the path of .csv file
 ```
 CSV_PATH = './HCPMetadata.csv'
 ```
-line#9: this is the path of what directory you want to upload and here is the whole HCP dataset
+line#9: this is the path of what directory you want to upload and here is the whole HCP dataset directory path in Brain server
 ```
 BASE_FILE_PATH = '/cluster/brain/connectome_disks'
 ```
